@@ -2,28 +2,171 @@
 <html>
     <head>
         <title>Calculator</title>
+        <style>
+            #sc {
+                position: fixed;
+                left: 3px;
+                top: 1px;
+                /* border: 1px solid black; */
+                background-image: url("../sahil1s.github.io/images/images (1)-02-01.jpeg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 100px;
+                width: 190px;
+                margin-bottom: 50px;
+            }
+            #sc:hover {
+                opacity: 0.8;
+            }
+            h3 {
+                font-size: 25px;
+            }
+            #a {
+                /* border: 1px solid black; */
+                
+                width: 250px;
+                height: 500px;
+                padding-left: 20px;
+                padding-top: 3px;
+                margin-top: 100px;
+                margin-left: auto;
+                margin-right: auto;
+                /* background-color: cadetblue; */
+            }
+            #b {
+                border: 1px solid black;
+                height: 450px;
+                width: 250px;
+                padding-left: 10px;
+                background-color: black;
+            }
+            #display {
+                margin-left: -9.5px;
+                height: 80px;
+                width: 251px;
+                background-color: lightgrey;
+            }
+            #sun-icon {
+                background-image: url("./images/sunicon.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                border: 1px solid;
+                border-radius: 10px;
+                height: 40px;
+                width: 40px;
+                margin-top: 10px;
+                margin-left: 8px;
+                opacity: 0.9;
+            }
+            #sun-icon:hover {
+                opacity: 1;
+            }
+            .first {
+                height: 40px;
+                width: 44px;
+                border: 1px solid black;
+                border-radius: 18px;
+                background-color: lightslategray;
+                color: white;
+                margin-left: 5px;
+                margin-right: 8px;
+                margin-top: 5px;
+            }
+            .first:hover {
+                background-color: darkgray;
+            }
+            .orange {
+                margin-left: 9px !important;
+            }
+            .buttons {
+                margin-top: 7px;
+                margin-left: 8px;
+                padding-left: 7px;
+                border: 1px solid black;
+                border-radius: 20px;
+                background-color: lightslategray;
+                color: white;
+                height: 45px;
+                width: 37px;
+                margin-right: 12px;
+            }
+            .buttons:hover {
+                background-color: darkgray; 
+            }
+            #cancel {
+                border: 1px solid black;
+                margin-left: 9px;
+                background-color: brown;
+                color:white;
+            }
+            #cancel:hover {
+                background-color: darkred;
+            }
+            .orange {
+                border: 1px solid black;
+                background-color: orange;
+                color: white;
+                margin-left: 8px;
+            }
+            .orange:hover {
+                background-color: darkorange;
+            }
+            .zero {
+                width: 98px !important;
+            }
+            .green {
+                background-color: green;
+                margin-left: 9px;
+            }
+            .green:hover {
+                background-color: green !important;
+                opacity: 0.7;
+            }
+            body {
+                background-color: burlywood;
+            }
+        </style>
     </head>
     <body>
-        <input type="number"> <br>
-        <button type="button" value="cancel">C</button>
-        <button type="button" value="add/subtract">+/-</button>
-        <button type="button" value="delete">Del</button>
-        <button type="button" value="divide">/</button> <br>
-        <button type="button" value="7">7</button>
-        <button type="button" value="8">8</button>
-        <button type="button" value="9">9</button>
-        <button type="button" value="multiply">*</button> <br>
-        <button type="button" value="4">4</button>
-        <button type="button" value="5">5</button>
-        <button type="button" value="6">6</button>
-        <button type="button" value="subtract">-</button> <br>
-        <button type="button" value="1">1</button>
-        <button type="button" value="2">2</button>
-        <button type="button" value="3">3</button>
-        <button type="button" value="add">+</button> <br>
-        <button type="button" value="zero">0</button>
-        <button type="button" value="decimal">.</button>
-        <button type="button" value="resu">=</button>
-
+        <div>
+            <a href="../sahil1s.github.io/index.html"  id="sc"></a>
+        </div>
+        <div id="a">
+            <h3>Calculator:-</h3>
+        <div id="b">
+            <input type="text" id="display" disabled> <br>
+            <button type="submit" value="day" id="sun-icon"></button>
+            <br>
+            <button type="submit" value="empty" class="first">e</button>
+            <button type="submit" value="22/7" class="first">pie</button>
+            <button type="submit" value="" class="first">sin</button>
+            <button type="submit" value="" class="first">deg</button>
+            <br>
+            <button type="submit" value="cancel" class="buttons" id="cancel">c</button>
+            <button type="submit" value="" class="buttons" id="openbracket">(</button>
+            <button type="submit" value="" class="buttons" id="closebracket">)</button>
+            <button type="submit" value="divide" class="buttons orange">/</button>
+            <br>
+            <button type="submit" value="7" class="buttons">7</button>
+            <button type="submit" value="8" class="buttons">8</button>
+            <button type="submit" value="9" class="buttons">9</button>
+            <button type="submit" value="multiply" class="buttons orange">*</button>
+            <br>
+            <button type="submit" value="4" class="buttons">4</button>
+            <button type="submit" value="5" class="buttons">5</button>
+            <button type="submit" value="6" class="buttons">6</button>
+            <button type="submit" value="subtract" class="buttons orange">-</button>
+            <br>
+            <button type="submit" value="1" class="buttons">1</button>
+            <button type="submit" value="2" class="buttons">2</button>
+            <button type="submit" value="3" class="buttons">3</button>
+            <button type="submit" value="add" class="buttons orange">+</button>
+            <br>
+            <button type="submit" value="0" class="buttons zero">0</button>
+            <button type="submit" value="." class="buttons">.</button>
+            <button type="submit" value="result"class="buttons green">=</button>
+                   
+        </div>
+        </div>
     </body>
 </html>
